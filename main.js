@@ -25,45 +25,40 @@ reverseString("hello");
 */
 
 
-function factoralize (num) 
+function factorialize (num) 
 {
     
     var arr = [];
-    var arrTwo = [];
-      
-    for (i = 0; i <= num; i++)
-
+    var arrTwo = [1];
+   
+     
+    if (num == 0 )
     {
-        arr[i] = i;
-        
-
-
+        return num = 1;
     }
-   
-   
-    arr.shift();
-    console.log(arr);
-    
-    
-    for (j = 0; j < num; j++)
-    {
-        
 
-        for (n = 1; n <= num; n++ )
+    else 
+    {
+
+    
+
+        for (i = 0; i <= num; i++)
+
         {
-            //console.log(arr);
-            arr[j] *= arr[n];
-            //console.log(arr);
-            
+            arr[i] = i;
         }
-       
-       
+        arr.shift();
+        for (j = 0; j < num; j++)
+        {
+            arrTwo[0] *= arr[j];
+        }
+    return num = arrTwo[0];
+    
     }
 
- 
     
-    return num;
+   
 }
 
 
-factoralize(5);
+factorialize(5);
