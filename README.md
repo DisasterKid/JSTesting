@@ -1,2 +1,2 @@
 # JSTesting
-For testing javaScript 
+Just a place to put all my JS testing files.
