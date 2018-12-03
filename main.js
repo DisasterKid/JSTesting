@@ -1,4 +1,4 @@
-//FCC reverse string challenge 
+    //FCC reverse string challenge 
 
 /*
 function reverseString (str)
@@ -24,7 +24,9 @@ reverseString("hello");
 
 */
 
+//FCC factorial challenge
 
+/*
 function factorialize (num) 
 {
     
@@ -59,6 +61,35 @@ function factorialize (num)
     
    
 }
-
-
 factorialize(5);
+*/
+
+
+//  Find the longest word in the string
+
+function findLongestWordLength(str)
+{
+   
+    var arr = [0];
+    var splitStr = str.split(" ");
+    //console.log(str.split(" "));
+    arr[0] = splitStr[0];
+
+    for (var i = 0; i < splitStr.length; i++)
+    {
+        //arr[0] = splitStr[i];
+
+        if (arr[0].length > splitStr[i].length)
+        {
+
+        } else {
+            arr[0] = splitStr[i];
+        }
+        //console.log(arr[0]);
+    }
+    //console.log(arr[0]);
+    //console.log(arr[0].length);
+    return arr[0].length;
+}
+
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
