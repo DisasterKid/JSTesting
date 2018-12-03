@@ -67,7 +67,7 @@ factorialize(5);
 
 //  Find the longest word in the string
 
-function findLongestWordLength(str)
+/* function findLongestWordLength(str)
 {
    
     var arr = [0];
@@ -93,3 +93,18 @@ function findLongestWordLength(str)
 }
 
 findLongestWordLength("The quick brown fox jumped over the lazy dog");
+*/
+
+// fint the largest number inside the sub arrays of the array given
+
+function largestOfFour(arr) {
+    // You can do this!
+
+    var a = [];
+    var b = [];
+    var c = [];
+    var d = [];
+    return arr;
+  }
+  
+  largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
