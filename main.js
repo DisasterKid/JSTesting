@@ -99,11 +99,31 @@ findLongestWordLength("The quick brown fox jumped over the lazy dog");
 
 function largestOfFour(arr) {
     // You can do this!
+    var arrTwo = [[]];
+    // loop for moving through the outer array and nested array
+    for (var i = 0; i < arr.length; i++)
+    {
+        
+        for (var j = 0; j < arr.length; j++)
+        {
 
-    var a = [];
-    var b = [];
-    var c = [];
-    var d = [];
+           
+           console.log(arr[i][j]);
+           //console.log(arr[i][j]);
+           
+            /* if (arr[i][i] > arr[i][j])
+            {
+                
+               // console.log(arr[i][i]);
+                console.log(arr[i][j]);
+                arrTwo[i] = arr[i][j];
+            }*/
+
+
+        }
+        
+    }
+    //console.log(arrTwo);
     return arr;
   }
   
