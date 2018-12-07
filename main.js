@@ -96,44 +96,38 @@ findLongestWordLength("The quick brown fox jumped over the lazy dog");
 */
 
 // fint the largest number inside the sub arrays of the array given
-
+/*
 function largestOfFour(arr) {
     var arrTwo = []; 
     // loop for moving through the outer array and nested array
+
     for (var i = 0; i < arr.length; i++)
     {
         
-       //console.log(arr[i]);
-       //var num = 0 ;
-       //var fun = arr[i][i];
-       arrTwo = arr[i].filter(num => num > arr[i][i]);
-       console.log(arrTwo);
+      var num = arr[i][0];
        
-         for (var j = 0; j < arr.length; j++)
+         for (var j = 1; j < arr[i].length; j++)
         {
-           
-          // arrTwo = arr[i][j];
 
-         // arrTwo = arr[i].filter(num => num > arr[i]);
-          //console.log(arrTwo);
+           if (arr[i][j] > num)
+            {
+                num = arr[i][j];
+            }
+
            
         } 
         
-    } 
-
-
+    arrTwo[i] = num;
     
-
-   
-    //console.log(arrTwo);
-    return arr;
+    }
+    return arrTwo;
   }
   
   largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
 
-
+*/
   
-
+// had some trouble with this one, needed some help form the fcc website.
 
 
 
@@ -152,3 +146,38 @@ function largestOfFour(arr) {
   var testFilter = flat.filter(num => num > 2);
 
   console.log(testFilter);  */
+
+
+// Challenge five confirm the ending
+/*
+function confirmEnding(str, target) {
+
+//var word = new RegExp(target);
+//console.log(str.slice(str.length - target.length) === target);
+//console.log(str.lastIndexOf(target));
+
+var last = str.lastIndexOf(target);
+var endOf = str.length;
+
+var place = str.length - target.length;
+var fun = str.substring(place, endOf);
+//console.log(last);
+//console.log(place);
+//console.log(endOf);
+
+   if ( fun == target )
+    {
+        //return str = true;
+        str = true;
+        console.log(str);
+    } else {
+        //return str = false;
+        str = false;
+        console.log(str);
+    }
+    //return str;
+  }
+  
+  confirmEnding("Connor", "n");
+  */
+  //needed some help here but was able to come up with my own solution. I grab the start of my substring by taking the length of the target and subtracting it from the string, then the length of the string becomes my ending point.
