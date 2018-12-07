@@ -181,3 +181,31 @@ var fun = str.substring(place, endOf);
   confirmEnding("Connor", "n");
   */
   //needed some help here but was able to come up with my own solution. I grab the start of my substring by taking the length of the target and subtracting it from the string, then the length of the string becomes my ending point.
+
+
+  // challenge six repeat the string x number of times and return an empty string if nothing or neg numbers are entered
+
+/*
+  function repeatStringNumTimes(str, num) {
+    // repeat after me
+  
+  var arr = [];
+  
+  for (var i = 0; i < num; i++)
+  {
+    arr.push(str);
+  }
+    
+    
+    
+    //console.log(arr.toString() );
+    var pre = arr.toString();
+    var fin = pre.replace(/,/g, "");
+    console.log(fin);
+    return str = fin;
+  }
+  
+  repeatStringNumTimes("abc", 4);
+  */
+
+  // This one wasn't too bad, just used a for loop and push() to create an array then turned the array into a sting and removed the "," from the output.
