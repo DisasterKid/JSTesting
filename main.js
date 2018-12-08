@@ -209,3 +209,28 @@ var fun = str.substring(place, endOf);
   */
 
   // This one wasn't too bad, just used a for loop and push() to create an array then turned the array into a sting and removed the "," from the output.
+
+  //challenge seven
+  //truncate a strong
+
+ /* function truncateString(str, num) {
+    // Clear out that junk in your trunk
+    var len = str.length;
+    console.log(num);
+   if (len > num)
+    {
+        var newStr = str.substring(0, num) + "...";
+        return str = newStr;
+    }else {
+        console.log(str);
+        return str;
+    }
+   
+    //console.log(newStr);
+
+    
+  }
+  */
+ // truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length)
+  //truncateString("A-tisket a-tasket A green and yellow basket", 8)
+  // This one was not to bad, just grabed a substring with the starting point of one and ended with num. If the length of the string is greater than num cut it and add ... else just print the string.
