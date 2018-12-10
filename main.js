@@ -259,4 +259,30 @@ var fun = str.substring(place, endOf);
 
   // This one wasnt too bad, I just had a for loop run through my array and check for the condition. If my array got to the end i just returned the undeclared num
 
+
+  //Challenge nine boohoo
+/*
+  function booWho(bool) {
+    // What is the new fad diet for ghost developers? The Boolean.
+    //console.log(bool);
+  if (bool === true || bool === false)
+  {
+    //console.log(bool);
+    //return bool = true;
+     
+    
   
+  }else {
+    //console.log(bool);
+    //return bool = false;
+     
+    
+  }
+    //console.log(bool);
+    //return bool;
+  }
+  
+  booWho(0);
+  */
+
+  // This one wasn't too bad either, just had a strict equals and an or statement if either of those condittions are met its true, else its false.
