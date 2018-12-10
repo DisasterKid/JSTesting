@@ -286,3 +286,32 @@ var fun = str.substring(place, endOf);
   */
 
   // This one wasn't too bad either, just had a strict equals and an or statement if either of those condittions are met its true, else its false.
+  
+// challenge ten Title Case a Sentence
+
+function titleCase(str) {
+    
+    var newStr = str.toLowerCase();
+    var strArr = newStr.split(" ");
+    var twoArr = newStr.split(" ");
+    var funArr = [];
+    
+    for (var i = 0; i < strArr.length; i++)
+    {
+      
+        strArr[i] = strArr.replace(strArr[i].toLowerCase(), strArr[i].toUpperCase());
+        
+        //strArr[i] = strArr[i][0].toUpperCase();
+        //console.log(strArr);
+
+    }
+    
+   /* for (var j = 0; j < strArr.length; j ++)
+    {
+        twoArr[j] = twoArr[0].unshift(strArr[j]);
+    }
+    console.log(twoArr);
+    //return str; */
+  }
+  
+  titleCase("I'm a little tea pot");
