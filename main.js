@@ -234,3 +234,29 @@ var fun = str.substring(place, endOf);
  // truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length)
   //truncateString("A-tisket a-tasket A green and yellow basket", 8)
   // This one was not to bad, just grabed a substring with the starting point of one and ended with num. If the length of the string is greater than num cut it and add ... else just print the string.
+
+  //challenge eight find a number in an array that meets the functions requirments
+ /* function findElement(arr, func) {
+    let num;
+  
+    for (var i = 0; i < arr.length; i++)
+    {
+
+       // console.log(arr[i]);
+        if(arr[i] % 2 === 0)
+        {
+            console.log(arr[i]);
+            return num = arr[i];
+        } else if (arr[i] == arr.length)
+        {
+            return num;
+        }
+    }
+
+  }
+  
+  findElement([1, 3, 5, 9], num => num % 2 === 0); */
+
+  // This one wasnt too bad, I just had a for loop run through my array and check for the condition. If my array got to the end i just returned the undeclared num
+
+  
