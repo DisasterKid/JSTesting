@@ -295,23 +295,41 @@ function titleCase(str) {
     var strArr = newStr.split(" ");
     var twoArr = newStr.split(" ");
     var funArr = [];
-    
-    for (var i = 0; i < strArr.length; i++)
+    var newLetter;
+    var fun;
+    var funny;
+    var superFun = " ";
+    for (var i in strArr)
     {
       
-        strArr[i] = strArr.replace(strArr[i].toLowerCase(), strArr[i].toUpperCase());
+       
+       //newLetter = strArr[i][0].toUpperCase();
+        //strArr[i][0] = strArr[i][0].toUpperCase();
+        //strArr.replace(strArr[i][0], newLetter);
+        //console.log(strArr[i][0]);
+        fun = strArr[i][0].toUpperCase();
+        funny = strArr[i].charAt(0);
+        superFun += strArr[i].replace(funny, fun);
+        if(i < strArr.length - 1)
+        {
+          superFun += " ";
+        }
         
-        //strArr[i] = strArr[i][0].toUpperCase();
-        //console.log(strArr);
+        //console.log(fun);
+        //console.log(funny);
+       // console.log(superFun);
 
     }
-    
+    superFun += ".";
+     str = superFun;
+     console.log(str);
    /* for (var j = 0; j < strArr.length; j ++)
     {
         twoArr[j] = twoArr[0].unshift(strArr[j]);
     }
     console.log(twoArr);
     //return str; */
+    //console.log(strArr);
+    return str;
   }
-  
   titleCase("I'm a little tea pot");
