@@ -288,7 +288,7 @@ var fun = str.substring(place, endOf);
   // This one wasn't too bad either, just had a strict equals and an or statement if either of those condittions are met its true, else its false.
   
 // challenge ten Title Case a Sentence
-
+/*
 function titleCase(str) {
     
     var newStr = str.toLowerCase();
@@ -298,7 +298,7 @@ function titleCase(str) {
     var newLetter;
     var fun;
     var funny;
-    var superFun = " ";
+    var superFun = "";
     for (var i in strArr)
     {
       
@@ -328,8 +328,10 @@ function titleCase(str) {
         twoArr[j] = twoArr[0].unshift(strArr[j]);
     }
     console.log(twoArr);
-    //return str; */
+    //return str; 
     //console.log(strArr);
     return str;
   }
-  titleCase("I'm a little tea pot");
+  titleCase("sHoRt AnD sToUt");
+  */ 
+ // this one took a little while, I had trouble with replaceing the first letter of each word with a capital one, i used some methods that I saw in the hints. At the end i got stuck because I initialized my superFun str with white space so it failed..
