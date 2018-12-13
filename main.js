@@ -337,16 +337,39 @@ function titleCase(str) {
  // this one took a little while, I had trouble with replaceing the first letter of each word with a capital one, i used some methods that I saw in the hints. At the end i got stuck because I initialized my superFun str with white space so it failed..
 
  // challenge eleven splice two arrays together.
-
+/*
  function frankenSplice(arr1, arr2, n) {
     // It's alive. It's alive!
-    var newArr = arr2;
-    console.log(arr2)
-    console.log(newArr)
+    var newArr = arr2.slice();
+   // console.log(arr2)
+   // console.log(newArr)
     newArr.splice(n, 0, arr1);
-    console.log(newArr.flat());
-    console.log(arr2)
-    return arr2;
+   // console.log(newArr.flat());
+   // console.log(newArr)
+    return arr2 = newArr.flat();
   }
   
-  frankenSplice([1, 2, 3], [4, 5, 6], 1);
+  frankenSplice(["claw", "tentacle"], ["head", "shoulders", "knees", "toes"], 2);
+  */
+
+  //This one was ok, I was a little stumped with splices behavior, I thought that just doing var x = arr2 would prevent arr2 from being changed when using the splace() method but I guess not, I need to do var x = arr2.slice(), that was arr2 wasn't chaged. At the end i had some trouble with the return statement I need to do arr2 = newArr.flat() doing newArr.flat() in the previous line would not work return the proper value when I did arr2 = newArr.
+
+
+  //Challenege twelve
+
+  function bouncer(arr) {
+    // Don't show a false ID to this bouncer.
+
+    for (var i = 0; i < arr.length; i++)
+    {
+        if (arr[i] == false || arr[i] === false)
+        {
+            arr.splice(i, 1);
+        } 
+        
+    }
+    console.log(arr);
+    return arr;
+  }
+  
+  bouncer([7, "ate", "", false, 9]);
