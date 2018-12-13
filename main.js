@@ -335,3 +335,18 @@ function titleCase(str) {
   titleCase("sHoRt AnD sToUt");
   */ 
  // this one took a little while, I had trouble with replaceing the first letter of each word with a capital one, i used some methods that I saw in the hints. At the end i got stuck because I initialized my superFun str with white space so it failed..
+
+ // challenge eleven splice two arrays together.
+
+ function frankenSplice(arr1, arr2, n) {
+    // It's alive. It's alive!
+    var newArr = arr2;
+    console.log(arr2)
+    console.log(newArr)
+    newArr.splice(n, 0, arr1);
+    console.log(newArr.flat());
+    console.log(arr2)
+    return arr2;
+  }
+  
+  frankenSplice([1, 2, 3], [4, 5, 6], 1);
