@@ -356,7 +356,7 @@ function titleCase(str) {
 
 
   //Challenege twelve
-
+/*
   function bouncer(arr) {
     // Don't show a false ID to this bouncer.
     for (var i = 0; i < arr.length; i++)
@@ -368,6 +368,7 @@ function titleCase(str) {
        if (x == false || x === false)
         {
             arr.splice(i, 1);
+            i -+ 1;
         } 
         
     }
@@ -376,3 +377,6 @@ function titleCase(str) {
   }
   
   bouncer([1,2,3,4,0,5,false]);
+*/
+  // i got a little stuck with splice at the end since. If I had two false values next to each other the second would not be removed since that index had just been evaluated. But i figured out that I ccan just subtract 1 from i if I enter my if statment.
+
