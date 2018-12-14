@@ -359,10 +359,13 @@ function titleCase(str) {
 
   function bouncer(arr) {
     // Don't show a false ID to this bouncer.
-
     for (var i = 0; i < arr.length; i++)
     {
-        if (arr[i] == false || arr[i] === false)
+        console.log(arr[i]);
+        var x = Boolean(arr[i]);
+        console.log(x);
+
+       if (x == false || x === false)
         {
             arr.splice(i, 1);
         } 
@@ -372,4 +375,4 @@ function titleCase(str) {
     return arr;
   }
   
-  bouncer([7, "ate", "", false, 9]);
+  bouncer([1,2,3,4,0,5,false]);
