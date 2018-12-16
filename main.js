@@ -380,3 +380,14 @@ function titleCase(str) {
 */
   // i got a little stuck with splice at the end since. If I had two false values next to each other the second would not be removed since that index had just been evaluated. But i figured out that I ccan just subtract 1 from i if I enter my if statment.
 
+
+//challenge thirteen
+
+
+
+  function getIndexToIns(arr, num) {
+    // Find my place in this sorted array.
+    return num;
+  }
+  
+  getIndexToIns([40, 60], 50);
