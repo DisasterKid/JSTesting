@@ -387,7 +387,41 @@ function titleCase(str) {
 
   function getIndexToIns(arr, num) {
     // Find my place in this sorted array.
-    return num;
+
+    var newArr = [];
+    var pos = 0;
+    var inCount = 0;
+    var bigNum = 0;
+    newArr = arr.sort(function(a,b){return a-b});
+    console.log(newArr);
+    console.log(newArr.length);
+    for (var i = 0; i < newArr.length; i++)
+    {
+        if (num <= newArr[i] && inCount < 1)
+        {
+            
+            console.log(num);
+            console.log(newArr[i]);
+            pos = newArr.indexOf(newArr[i]);
+            console.log(pos);
+            inCount += 1;
+            //console.log(inCount);
+            return num = pos;
+        } else if ( i == newArr.length - 1)
+        {
+           
+           bigNum = newArr.length;
+           //console.log(bigNum);
+           return num = bigNum;
+           
+        } else if ( arr[0] == 0)
+        {
+            console.log("hello");
+            return num = 0;
+            
+        }
+    }
+    //return num = pos;
   }
   
-  getIndexToIns([40, 60], 50);
+  getIndexToIns([], 1);
