@@ -384,7 +384,7 @@ function titleCase(str) {
 //challenge thirteen
 
 
-
+/*
   function getIndexToIns(arr, num) {
     // Find my place in this sorted array.
 
@@ -393,17 +393,19 @@ function titleCase(str) {
     var inCount = 0;
     var bigNum = 0;
     newArr = arr.sort(function(a,b){return a-b});
-    console.log(newArr);
-    console.log(newArr.length);
+   // console.log(Boolean(arr.length));
+   console.log(arr);
+   //console.log(newArr);
+    //console.log(newArr.length);
     for (var i = 0; i < newArr.length; i++)
     {
         if (num <= newArr[i] && inCount < 1)
         {
             
-            console.log(num);
-            console.log(newArr[i]);
+            //console.log(num);
+            //console.log(newArr[i]);
             pos = newArr.indexOf(newArr[i]);
-            console.log(pos);
+            //console.log(pos);
             inCount += 1;
             //console.log(inCount);
             return num = pos;
@@ -414,14 +416,29 @@ function titleCase(str) {
            //console.log(bigNum);
            return num = bigNum;
            
-        } else if ( arr[0] == 0)
-        {
-            console.log("hello");
+        } 
+    }
+
+    if (arr.length == 0)
+    {
+            console.log("bro");
             return num = 0;
             
-        }
+        
     }
     //return num = pos;
   }
   
   getIndexToIns([], 1);
+*/
+
+//This one gave me a bit of trouble at the end, i didn't pay attention and I had my final else if clause insde my for loop, which would prevent it from even running. So I moved it outside my for loop and the function worked properly.
+
+
+//Challenge fourteen
+
+function mutation(arr) {
+    return arr;
+  }
+  
+  mutation(["hello", "hey"]);
