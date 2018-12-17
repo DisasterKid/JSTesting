@@ -438,7 +438,23 @@ function titleCase(str) {
 //Challenge fourteen
 
 function mutation(arr) {
+    var arrOne = arr[0];
+    var arrTwo = arr[1];
+    var count = arrTwo.length;
+    console.log(arrOne.length);
+    
+    for (var i = 0; i < arrOne.length; i++)
+    {
+        console.log(i);
+        if (arrOne[i] == arrTwo[0])
+        {
+            count += 1;
+            console.log(count)
+        }
+    }
+    
     return arr;
+
   }
   
   mutation(["hello", "hey"]);
