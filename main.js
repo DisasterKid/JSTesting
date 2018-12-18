@@ -436,7 +436,7 @@ function titleCase(str) {
 
 
 //Challenge fourteen
-
+/*
 function mutation(arr) {
     var arrOne = arr[0];
     var arrTwo = arr[1];
@@ -449,7 +449,7 @@ function mutation(arr) {
         if (arrOne[i] == arrTwo[0])
         {
             count += 1;
-            console.log(count)
+            console.log(count);
         }
     }
     
@@ -458,3 +458,14 @@ function mutation(arr) {
   }
   
   mutation(["hello", "hey"]);
+  */
+
+
+ function mutation(arr) {
+    arr.toLowerCase();
+    console.log(arr);
+    
+    return arr;
+  }
+  
+  mutation(["hello", "Hey"]);
