@@ -383,19 +383,20 @@ function titleCase(str) {
 
 //challenge thirteen
 
-
 /*
+
   function getIndexToIns(arr, num) {
     // Find my place in this sorted array.
 
-    var newArr = [];
+    var newArr = arr.slice();
     var pos = 0;
     var inCount = 0;
     var bigNum = 0;
-    newArr = arr.sort(function(a,b){return a-b});
+    console.log(arr);
+    newArr.sort(function(a,b){return a-b});
    // console.log(Boolean(arr.length));
    console.log(arr);
-   //console.log(newArr);
+   console.log(newArr);
     //console.log(newArr.length);
     for (var i = 0; i < newArr.length; i++)
     {
@@ -421,7 +422,7 @@ function titleCase(str) {
 
     if (arr.length == 0)
     {
-            console.log("bro");
+            //console.log("bro");
             return num = 0;
             
         
@@ -429,7 +430,7 @@ function titleCase(str) {
     //return num = pos;
   }
   
-  getIndexToIns([], 1);
+  getIndexToIns([99,67,1,100,6], 1);
 */
 
 //This one gave me a bit of trouble at the end, i didn't pay attention and I had my final else if clause insde my for loop, which would prevent it from even running. So I moved it outside my for loop and the function worked properly.
@@ -438,25 +439,50 @@ function titleCase(str) {
 //Challenge fourteen
 /*
 function mutation(arr) {
-    var arrOne = arr[0];
-    var arrTwo = arr[1];
-    var count = arrTwo.length;
-    console.log(arrOne.length);
-    
-    for (var i = 0; i < arrOne.length; i++)
+ 
+   
+   var fun = arr.toString(); 
+   fun = fun.toLowerCase();
+   fun = fun.split(",");
+   var funOne = fun[0];
+   var funTwo = fun[1];
+   var j = 0;
+   var count = funTwo.length;
+   var loopCount = funTwo.length;
+   console.log(funTwo);
+   console.log(count);
+    for (var i = 0; i <= funOne.length; i++)
     {
-        console.log(i);
-        if (arrOne[i] == arrTwo[0])
+        if ( funOne[i] == funTwo[j] && count !== 0)
         {
+<<<<<<< HEAD
             count += 1;
             console.log(count);
         }
+=======
+            i = 0;
+            console.log(funOne[i]);
+            console.log(funTwo[j]);
+            j += 1;
+            count -= 1;
+            console.log(j);
+            console.log(count);
+        } else if ( j == funTwo.length)
+        {
+            console.log("test");
+            return arr = true;
+        }/* else if () {
+            return arr = false;
+        }*/
+>>>>>>> 2eb573afa25eca6e9f4a1e83ea296e2f94d1647f
     }
+
     
-    return arr;
+    //return arr;
 
   }
   
+<<<<<<< HEAD
   mutation(["hello", "hey"]);
   */
 
@@ -469,3 +495,33 @@ function mutation(arr) {
   }
   
   mutation(["hello", "Hey"]);
+=======
+  mutation(["Mary", "Army"]);
+
+  
+
+/*
+
+  function arrFun (arr)
+
+  {
+    var fun = arr;
+
+    console.log( fun.sort((a,b) => a - b));
+    console.log(fun);
+
+
+  }
+
+
+  function arrThing (a, b)
+
+  {
+    var arr = a - b;
+    console.log(arr);  
+    return a- b;
+  }
+
+
+arrThing();*/
+>>>>>>> 2eb573afa25eca6e9f4a1e83ea296e2f94d1647f
