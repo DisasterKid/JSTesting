@@ -542,22 +542,30 @@ while (j !== count)
 
 //challenge fifteen
 
-
+/*
 function chunkArrayInGroups(arr, size) {
     // Break it up.
     var newArr = [];
-    var startArr = arr.length - size;
-    var arrOne = arr.slice(0,startArr);
-    var arrTwo = arr.slice(size);
-    
-   // console.log(arrOne);
-    //console.log(arr);
-    //console.log(arrTwo);
-    newArr[0] = arrOne;
-    newArr[1] = arrTwo;
-    console.log(newArr);
+    var j = 0;
 
-    return arr;
+    for (var i = 0; i <= arr.length; i++)
+    {
+        console.log(arr.length);
+        newArr[i] = arr.splice(j, size);
+        console.log(j + " before");
+        console.log(j + " after");
+        console.log(arr);
+
+    }
+
+    if ( arr.length == 1)
+    {
+        newArr.push(arr);
+    }
+    console.log(newArr);
+    return arr = newArr;
   }
   
   chunkArrayInGroups([0, 1, 2, 3, 4, 5], 2);
+  */
+// This one was not too bad, I just slcied the array down based on the size entered, if there were left over numbers in the array i just used an if to check then push them onto the array.
