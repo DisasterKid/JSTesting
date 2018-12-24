@@ -437,7 +437,7 @@ function titleCase(str) {
 
 
 //Challenge fourteen
-
+/*
 function mutation(arr) {
  
    
@@ -448,29 +448,34 @@ function mutation(arr) {
    var funTwo = fun[1];
    var j = 0;
    var count = funTwo.length;
-   var loopCount = funTwo.length;
-   console.log(funTwo);
-   console.log(count);
+  //console.log(funTwo);
+   //console.log(funOne);
     for (var i = 0; i <= funOne.length; i++)
     {
+        
+        console.log(i + " i am i");
         if ( funOne[i] == funTwo[j] && count !== 0)
         {
-            i = 0;
-            console.log(funOne[i]);
-            console.log(funTwo[j]);
-            j += 1;
-            count -= 1;
-            console.log(j);
-            console.log(count);
+            
+            //console.log(i + " i am i------")
+            console.log(funOne[i] + " i am i------");
+            console.log(funTwo[j] + " i am J-----");
+            console.log(j + " i am j-------");
+            console.log(count + " i am count------");
+           // console.log(i + " i am i")
+           i = -1; 
+           j += 1;
+           count -= 1;
         } else if ( j == funTwo.length)
         {
             console.log("test");
-            console.log("helloy");
             return arr = true;
             
-        }/* else if () {
+        } else if (i == funOne.length) {
+            console.log("false test");
             return arr = false;
-        }*/
+        }
+        //console.log(i + " i am i")
     }
 
     
@@ -478,11 +483,12 @@ function mutation(arr) {
 
   }
   
-  mutation(["Mary", "Army"]);
-
+  mutation(["hello", "hey"]);
+  
+  
   
 
-/*
+/
 
   function arrFun (arr)
 
@@ -505,4 +511,41 @@ function mutation(arr) {
   }
 
 
-arrThing();*/
+arrThing();
+
+
+
+var i = 0;
+var j = 0;
+var count = 4;
+var word = 10 ;
+arr = [2,3,1,4];
+arrTwo = [1,2,3,4];
+
+
+while (j !== count)
+{
+    if (arr[i] == arrTwo[j])
+    {
+        console.log(count, i,j);
+        count -= 1;
+        i = 0;
+        console.log("fun");
+
+    }
+    console.log("fun" + count);
+}*/
+
+// This one took longer then it should have, I just stuck with my for loop not gettting back to zero since the loop will also execute the last part of the for loop statment at the end of the main block of code so it will never get back to zero
+// I solved that by declaring i to -1 inside my if statement to get it back to zero not ideal but it works.
+
+
+//challenge fifteen
+
+
+function chunkArrayInGroups(arr, size) {
+    // Break it up.
+    return arr;
+  }
+  
+  chunkArrayInGroups(["a", "b", "c", "d"], 2);
