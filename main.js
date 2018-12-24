@@ -545,7 +545,19 @@ while (j !== count)
 
 function chunkArrayInGroups(arr, size) {
     // Break it up.
+    var newArr = [];
+    var startArr = arr.length - size;
+    var arrOne = arr.slice(0,startArr);
+    var arrTwo = arr.slice(size);
+    
+   // console.log(arrOne);
+    //console.log(arr);
+    //console.log(arrTwo);
+    newArr[0] = arrOne;
+    newArr[1] = arrTwo;
+    console.log(newArr);
+
     return arr;
   }
   
-  chunkArrayInGroups(["a", "b", "c", "d"], 2);
+  chunkArrayInGroups([0, 1, 2, 3, 4, 5], 2);
