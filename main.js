@@ -569,3 +569,39 @@ function chunkArrayInGroups(arr, size) {
   chunkArrayInGroups([0, 1, 2, 3, 4, 5], 2);
   */
 // This one was not too bad, I just slcied the array down based on the size entered, if there were left over numbers in the array i just used an if to check then push them onto the array.
+
+
+
+
+
+function fixArr (arr, elem)
+
+{
+var newArr = [];
+//console.log(arr);
+//newArr.shift();
+//console.log(newArr);
+
+   for (var i = 0; i < arr.length; i++)
+    {
+        
+        console.log("I am i " + i);
+        for (var j = 0; j < arr[i].length; j++)
+        {
+            console.log("I am j " + j);
+            if(arr[i][j] == elem)
+            {
+               
+              //delete the current nest... without messing up the array, somehow...
+              console.log("swifty");
+            }
+        }
+    
+    }
+    console.log(newArr);
+ return newArr;
+}
+
+
+
+fixArr([[1,2,8,4],[5,6,7,8,],[8,8,8,8],[8,9,6,5]],8);
