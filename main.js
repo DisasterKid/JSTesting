@@ -585,23 +585,25 @@ var newArr = [];
    for (var i = 0; i < arr.length; i++)
     {
         
-        console.log("I am i " + i);
         for (var j = 0; j < arr[i].length; j++)
         {
-            console.log("I am j " + j);
-            if(arr[i][j] == elem)
+           
+            if(arr[i][j] !== elem)
             {
                
-              //delete the current nest... without messing up the array, somehow...
-              console.log("swifty");
+               newArr.push(arr[i][j]);
+              
             }
         }
     
     }
+    //newArr = arr;
+   // newArr.splice(2,1);
     console.log(newArr);
+    console.log(arr);
  return newArr;
 }
 
 
 
-fixArr([[1,2,8,4],[5,6,7,8,],[8,8,8,8],[8,9,6,5]],8);
+fixArr([[10, 8, 3], [14, 6, 23], [3, 18, 6]], 18);
