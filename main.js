@@ -599,3 +599,14 @@ var newArr = [];
 fixArr([[10, 8, 3], [14, 6, 23], [3, 18, 6]], 18);
 
 */
+
+
+function testFunction()
+{
+    let i = 0;
+
+    if ( i < 10)
+    {
+       window.alert(i);
+    }
+}

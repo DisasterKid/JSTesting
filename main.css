@@ -1,0 +1,10 @@
+.main {
+    text-align: center;
+    border: 1px solid black;
+}
+
+.js {
+    text-align: center;
+    margin: 10px; 
+    border: 1px solid green;
+}
