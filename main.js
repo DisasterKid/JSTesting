@@ -571,9 +571,9 @@ function chunkArrayInGroups(arr, size) {
 // This one was not too bad, I just slcied the array down based on the size entered, if there were left over numbers in the array i just used an if to check then push them onto the array.
 
 
+// Data structures challenges, removed a nested area if it met a condition
 
-
-
+/*
 function fixArr (arr, elem)
 
 {
@@ -584,26 +584,18 @@ var newArr = [];
 
    for (var i = 0; i < arr.length; i++)
     {
-        
-        for (var j = 0; j < arr[i].length; j++)
-        {
-           
-            if(arr[i][j] !== elem)
+            if(arr[i].indexOf(elem) == -1 )
             {
                
-               newArr.push(arr[i][j]);
+               newArr.push(arr[i]);
               
             }
-        }
-    
     }
-    //newArr = arr;
-   // newArr.splice(2,1);
-    console.log(newArr);
-    console.log(arr);
  return newArr;
 }
 
 
 
 fixArr([[10, 8, 3], [14, 6, 23], [3, 18, 6]], 18);
+
+*/
